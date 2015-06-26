@@ -2,23 +2,6 @@
 
 var assert = require('assert');
 
-function Stack(input) {
-  this.push = function(value) {
-  };
-
-  this.pop = function() {
-    return 0;
-  };
-
-  this.toString = function() {
-    return "I am a Stack";
-  };
-
-  this.peek = function() {
-    return 0;
-  }
-}
-
 describe('Stack', function() {
   describe('#push()', function() {
     it('pushes a the given value to the stack', function() {

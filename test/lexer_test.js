@@ -2,11 +2,6 @@
 
 var assert = require('assert');
 
-function Lexer(input) {
-  this.next = function() { return true; };
-  this.token = function() { return 0; };
-}
-
 describe('Lexer', function() {
   describe('#token()', function() {
     it('returns the current token', function() {

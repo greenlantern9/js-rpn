@@ -2,12 +2,6 @@
 
 var assert = require('assert');
 
-function Calculator() {
-  this.calculate = function(expression) {
-    return -1;
-  }
-}
-
 describe('Calculator', function() {
   describe('#calculate()', function() {
     var calculator = new Calculator();
@@ -56,6 +50,10 @@ describe('Calculator', function() {
 
     it('supports pow', function() {
       assert.equal(calculator.calculate("2 3 pow"), 8);
+    })
+
+    it('can calculate the number of seconds in a year', function() {
+      assert.equal(calculator.calculate("60 60 * 24 * 365 *"), 60 * 60 * 24 * 365);
     })
   })
 })
