@@ -8,7 +8,8 @@ describe('Stack', function() {
       var stack = new Stack();
       stack.push(123);
       stack.push(456);
-      assert.equal(stack.toString(), "123 456");
+      stack.push(789);
+      assert.equal(stack.toString(), "123 456 789");
     })
   })
 
@@ -17,8 +18,9 @@ describe('Stack', function() {
       var stack = new Stack();
       stack.push(123);
       stack.push(456);
-      assert.equal(stack.pop(), 456);
-      assert.equal(stack.toString(), "123");
+      stack.push(789);
+      assert.equal(stack.pop(), 789);
+      assert.equal(stack.toString(), "123 456");
     })
   })
 
@@ -27,8 +29,9 @@ describe('Stack', function() {
       var stack = new Stack();
       stack.push(123);
       stack.push(456);
-      assert.equal(stack.peek(), 456);
-      assert.equal(stack.toString(), "123 456");
+      stack.push(789);
+      assert.equal(stack.peek(), 789);
+      assert.equal(stack.toString(), "123 456 789");
     })
   })
 })
