@@ -1,5 +1,16 @@
 # Exercise: RPN in JavaScript
 
+## Reverse Polish Notation for Expressions
+
+2 3 + 4 * ==> 2 + 3 * 4
+2 3 * 4 + ==> 2 * 3 + 4
+2 3 4 * + ==> 2 + (3 * 4)
+2 3 + 4 * ==> (2 + 3) * 4
+2 3 4 + * ==> 2 * (3 + 4)
+
+
+##
+
 Write a script that takes an expression in RPN from the command line, calculates it
 and prints the result to the console.
 
